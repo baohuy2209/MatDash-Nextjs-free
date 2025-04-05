@@ -1,15 +1,26 @@
 import { Badge, Dropdown } from "flowbite-react";
-import Image from "next/image";
-import React from "react";
-import Link from "next/link";
 import { Icon } from "@iconify/react";
+import Link from "next/link";
+
+
+
+const Notifications = [
+    {
+        id:1,
+        title:"Item1",
+    },
+    {
+        id:2,
+        title:"Item2",
+    },,
+]
 
 const Notification = () => {
     return (
         <div className="relative group/menu">
-            <Dropdown label="" className="rounded-sm w-44 notification" dismissOnClick={false} renderTrigger={() => (
+            <Dropdown label="" className="rounded-sm w-[150px] z-50" placement="right-start" dismissOnClick={false} renderTrigger={() => (
                 <span
-                    className="h-10 w-10 hover:text-primary hover:bg-lightprimary rounded-full flex justify-center items-center cursor-pointer relative"
+                    className="h-10 w-10 hover:text-primary group-hover/menu:bg-lightprimary group-hover/menu:text-primary hover:bg-lightprimary rounded-full flex justify-center items-center cursor-pointer relative"
                     aria-label="Notifications"
                 >
                     <Icon icon="solar:bell-linear" height={20} />
@@ -17,64 +28,13 @@ const Notification = () => {
                 </span>
             )}
             >
-                <Dropdown.Item as={Link} href="#" className="px-3 py-3 flex items-center bg-hover group/link w-full gap-3 text-dark hover:bg-gray-100">
-                    <div className="flex items-center gap-5">
-                        <div>
-                            <Image
-                                src="/images/profile/user-1.jpg"
-                                alt="user"
-                                width={35}
-                                height={35}
-                                className="rounded-full"
-                            />
-                        </div>
-                        <p className="text-black text-sm font-semibold">Received Order from John Doe of $385.90</p>
-                    </div>
-                </Dropdown.Item>
-                <Dropdown.Item as={Link} href="#" className="px-3 py-3 flex items-center bg-hover group/link w-full gap-3 text-dark hover:bg-gray-100">
-                    <div className="flex items-center gap-5">
-                        <div>
-                            <Image
-                                src="/images/profile/user-2.jpg"
-                                alt="user"
-                                width={35}
-                                height={35}
-                                className="rounded-full"
-                            />
-                        </div>
-                        <p className="text-black text-sm font-semibold">Received Order from Jessica Williams of $249.99</p>
-                    </div>
-                </Dropdown.Item>
-                <Dropdown.Item as={Link} href="#" className="px-3 py-3 flex items-center bg-hover group/link w-full gap-3 text-dark hover:bg-gray-100">
-                    <div className="flex items-center gap-5">
-                        <div>
-                            <Image
-                                src="/images/profile/user-3.jpg"
-                                alt="user"
-                                width={35}
-                                height={35}
-                                className="rounded-full"
-                            />
-                        </div>
-                        <p className="text-black text-sm font-semibold">Received Order from John Edison of $499.99</p>
-                    </div>
-                </Dropdown.Item>
-                <Dropdown.Item as={Link} href="#" className="px-3 py-3 flex items-center bg-hover group/link w-full gap-3 text-dark hover:bg-gray-100">
-                    <div className="flex items-center gap-5">
-                        <div>
-                            <Image
-                                src="/images/profile/user-4.jpg"
-                                alt="user"
-                                width={35}
-                                height={35}
-                                className="rounded-full"
-                            />
-                        </div>
-                        <p className="text-black text-sm font-semibold">Received message from Nitin Chohan</p>
-                    </div>
-                </Dropdown.Item>
-                <div className="">
-                </div>
+                {
+                    Notifications.map((item) => (
+                        <Dropdown.Item as={Link} key={item?.id} href="/" className="px-3 py-2 flex items-center bg-hover group/link w-full gap-3 text-dark hover:bg-gray-100">
+                            {item?.title}
+                       </Dropdown.Item>
+                    ))
+                }
             </Dropdown>
         </div>
     );

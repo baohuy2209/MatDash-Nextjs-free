@@ -19,12 +19,12 @@ const SidebarLayout = () => {
             className="fixed menu-sidebar pt-6 bg-white dark:bg-darkgray z-[10]"
             aria-label="Sidebar with multi-level dropdown example"
           >
-            <div className="mb-7 px-6 brand-logo">
+            <div className="mb-7 px-4 brand-logo">
               <FullLogo />
             </div>
 
-            <SimpleBar className="h-[calc(100vh_-_120px)]">
-              <Sidebar.Items className="px-6">
+            <SimpleBar className="h-[calc(100vh_-_170px)]">
+              <Sidebar.Items className="px-4">
                 <Sidebar.ItemGroup className="sidebar-nav">
                   {SidebarContent.map((item, index) => (
                     <React.Fragment key={index}>
