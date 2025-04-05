@@ -4,7 +4,7 @@
 [![Next Js](https://adminmart.com/wp-content/uploads/2024/09/Matdash_nextjs_free.jpg)](https://adminmart.com/product/matdash-free-next-js-admin-template/?ref=56)
 
 ## Skill Stash
-[![Next Js](https://skillicons.dev/icons?i=nextjs)](https://adminmart.com/product/matdash-free-next-js-admin-template/?ref=56)
+
 <div >
 <a href="https://adminmart.com/templates/nextjs-admin-templates/">
 <img src="https://skillicons.dev/icons?i=nextjs" height="32" alt="Nextjs"> 

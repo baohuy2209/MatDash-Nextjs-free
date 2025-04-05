@@ -59,7 +59,6 @@ const SidebarContent: MenuItem[] = [
       {
         name: "Front Pages",
         id: uniqueId(),
-        isPro: true,
         icon: "solar:home-angle-linear",
         children: [
           {
@@ -138,7 +137,6 @@ const SidebarContent: MenuItem[] = [
     ],
   },
   {
-    isPro: true,
     heading: "Apps",
     children: [
       {
@@ -151,7 +149,6 @@ const SidebarContent: MenuItem[] = [
       {
         name: "Ecommerce",
         id: uniqueId(),
-        isPro: true,
         icon: "solar:cart-3-line-duotone",
         children: [
           {
@@ -195,7 +192,6 @@ const SidebarContent: MenuItem[] = [
       {
         name: "Blogs",
         id: uniqueId(),
-        isPro: true,
         icon: "solar:widget-add-line-duotone",
         children: [
           {
@@ -215,7 +211,6 @@ const SidebarContent: MenuItem[] = [
       {
         name: "User Profile",
         id: uniqueId(),
-        isPro: true,
         icon: "solar:shield-user-outline",
         children: [
           {
@@ -248,7 +243,6 @@ const SidebarContent: MenuItem[] = [
       {
         name: "Invoice",
         id: uniqueId(),
-        isPro: true,
         icon: "solar:bill-check-outline",
         children: [
           {
@@ -322,13 +316,11 @@ const SidebarContent: MenuItem[] = [
     ],
   },
   {
-    isPro: true,
     heading: "Pages",
     children: [
       {
         name: "Pages",
         id: uniqueId(),
-        isPro: true,
         icon: "solar:cloud-file-linear",
         children:[
       {
@@ -404,7 +396,6 @@ const SidebarContent: MenuItem[] = [
       {
         name: "Ui Elements",
         id: uniqueId(),
-        isPro: true,
         icon: "solar:widget-6-outline",
         children: [
           {
@@ -605,7 +596,6 @@ const SidebarContent: MenuItem[] = [
       {
         name: "Ui Elements",
         id: uniqueId(),
-        isPro: true,
         icon: "solar:text-underline-cross-broken",
         children: [
           {
@@ -649,7 +639,6 @@ const SidebarContent: MenuItem[] = [
       {
         name: "Form Elements",
         id: uniqueId(),
-        isPro: true,
         icon: "solar:align-vertical-spacing-line-duotone",
         children: [
           {
@@ -997,7 +986,6 @@ const SidebarContent: MenuItem[] = [
       {
         name: "Auth Pages",
         id: uniqueId(),
-        isPro: true,
         icon: "solar:user-plus-rounded-line-duotone",
         children:[
       {
