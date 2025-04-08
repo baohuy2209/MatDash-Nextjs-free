@@ -750,7 +750,6 @@ const SidebarContent: MenuItem[] = [
       {
         name: "React Tables",
         id: uniqueId(),
-        isPro: true,
         icon: "solar:round-transfer-vertical-broken",
         children:[
       {
