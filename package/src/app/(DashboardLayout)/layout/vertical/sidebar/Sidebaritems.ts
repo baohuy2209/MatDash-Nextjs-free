@@ -16,7 +16,7 @@ export interface MenuItem {
   id?: number;
   to?: string;
   items?: MenuItem[];
-  children?: ChildItem[];
+  children?: ChildItem[]; 
   url?: any;
   isPro?: boolean
 }
